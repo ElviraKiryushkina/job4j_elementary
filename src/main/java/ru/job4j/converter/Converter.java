@@ -16,11 +16,11 @@ public class Converter {
         float inForDollar = 420;
         float expectedForEuro = 6;
         float expectedForDollar = 7;
-        float outEuro = Converter.rubleToEuro(inForEuro);
-        float outDollar = Converter.rubleToDollar(inForDollar);
-        boolean passedEuro = expectedForEuro == outEuro;
-        boolean passedDollar = expectedForDollar == outDollar;
-        System.out.println("420 rubles are " + outEuro + " euro. Test result : " + passedEuro);
-        System.out.printf("420 rubles are " + outDollar + " dollar. Test result : " + passedDollar);
+        float outForEuro = Converter.rubleToEuro(inForEuro);
+        float outForDollar = Converter.rubleToDollar(inForDollar);
+        boolean passedEuro = expectedForEuro == outForEuro;
+        boolean passedDollar = expectedForDollar == outForDollar;
+        System.out.println("420 rubles are " + outForEuro + " euro. Test result : " + passedEuro);
+        System.out.printf("420 rubles are " + outForDollar + " dollar. Test result : " + passedDollar);
     }
 }
